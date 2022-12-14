@@ -3,6 +3,8 @@ import AddTodo from './components/AppAddTodo.vue';
 import DelAllTodos from './components/AppDelAllTodos.vue';
 import ShowAll from './components/AppShowAll.vue';
 import AppTitle from './components/AppTitle.vue';
+import { store } from './store';
+
 
 
 export default {
@@ -11,6 +13,9 @@ export default {
     DelAllTodos,
     ShowAll,
     AppTitle,
+  },
+  mounted() {
+    store.loadTodos();
   }
 }
 </script>

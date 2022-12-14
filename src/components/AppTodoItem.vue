@@ -12,10 +12,10 @@ export default {
     emits: ['delitem'],
     methods: {
         delTodo() {
-            this.$emit('delitem',this.item);
+            store.removeAloneTodoInServer(this.item)
         },
         changeState() {
-            store.changeState(this.item)
+            store.changeStateServer(this.item)
         }
     }
 }

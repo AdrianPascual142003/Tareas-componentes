@@ -9,7 +9,7 @@ export default {
     },
     methods: {
         deleteAll() {
-            store.deleteAll();
+            store.removeAllInServer();
         },
     }
 }

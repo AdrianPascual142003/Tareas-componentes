@@ -10,7 +10,7 @@ export default {
     methods: {
         enviarForm() {
             if (this.newTodo) {
-                store.addTodo(this.newTodo)
+                store.addTodoInServer(this.newTodo)
                 this.newTodo = ''
             }
         },
